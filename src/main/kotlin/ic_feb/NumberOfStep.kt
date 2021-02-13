@@ -17,7 +17,7 @@ class NumberOfStep {
 
     fun numberOfStepsOptimal(num: Int): Int {
         val binaryString = num.toString(2)
-        var steps = 0;
+        var steps = 0
         for (bit in binaryString) {
             steps = if (bit == '1') {
                 steps + 2
